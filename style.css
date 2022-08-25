@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.container {
+  width: 25em;
+  height: 25em;
+  background: linear-gradient(rgb(37, 45, 55), hsl(216, 12%, 11%));
+  border-radius: 1.5em;
+  padding: 1.5em;
+  display: flex;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+.star--container {
+  background-color: hsl(213, 19%, 23%);
+  height: 2.5em;
+  width: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.star {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.7em;
+}
+
+.paragraph {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  margin-bottom: 2em;
+}
+
+.submit {
+  padding: 1em;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 50px;
+}
+.submit:hover {
+  cursor: pointer;
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  background-color: hsl(213, 19%, 23%);
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 2em;
+}
+
+li:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+.selected,
+.selected:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+/* DISPLAY THANK YOU STYLES */
+
+.first-page,
+.second-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-page {
+  align-items: center;
+  margin-top: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.second-page p {
+  text-align: center;
+}
+
+.thanks {
+  margin-bottom: 2em;
+}
+
+.rating {
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    height: 100%;
+
+    margin: 0 auto;
+  }
+}
