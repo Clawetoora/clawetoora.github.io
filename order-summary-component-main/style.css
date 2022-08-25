@@ -124,6 +124,10 @@ h2 {
 }
 
 @media (max-width: 376px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: contain;
+  }
   .container {
     width: 90%;
   }
