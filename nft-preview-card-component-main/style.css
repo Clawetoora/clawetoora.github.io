@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  flex-direction: column;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 20em;
+  height: 35em;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.img-background {
+  width: 100%;
+  height: 120%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 100%;
+  z-index: 3;
+}
+
+.img-background:hover {
+  box-shadow: inset 0 0 0 1000px hsla(178, 100%, 50%, 0.568);
+  z-index: 1;
+}
+
+.filter {
+  position: absolute;
+  transform: translate(250%, 225%);
+  z-index: 2;
+}
+
+/* .filter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20em;
+  height: 20em;
+
+  background-color: hsl(178, 100%, 50%);
+  background-repeat: no-repeat;
+  opacity: 0;
+} */
+
+/* .filter:hover {
+  opacity: 100%;
+} */
+
+h1 {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+.info {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 1em;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.days-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.avatar {
+  max-width: 10%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin: 0 auto;
+  }
+}
