@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  height: 35em;
+  width: 25em;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.image {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 20px;
+  color: hsl(223, 47%, 23%);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+.text {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+  width: 80%;
+}
+
+.prices {
+  width: 80%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  color: hsl(245, 75%, 52%);
+}
+
+.btn {
+  width: 80%;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 5px 10px 10px hsla(224, 23%, 55%, 0.333);
+  margin-bottom: 0.8em;
+}
+
+.cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+/*  */
+/* HOVER STATES */
+/*  */
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.change:hover {
+  opacity: 70%;
+  text-decoration: none;
+}
+
+@media (max-width: 376px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 281px) {
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  .plan {
+    flex-wrap: wrap;
+  }
+}
